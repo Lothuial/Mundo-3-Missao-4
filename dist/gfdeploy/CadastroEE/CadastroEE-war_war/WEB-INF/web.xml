@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app metadata-complete="true" version="5.0" vxmlns="jakarta.ee/xml/ns/jakartaee" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="w3.org/2001/XMLSchema-instance" xsi:schemaLocation="jakarta.ee/xml/ns/jakartaee jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+    <servlet>
+        <servlet-name>ServletProduto</servlet-name>
+        <servlet-class>cadastroee.servlets.ServletProduto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <servlet-class>cadastroee.servlets.ServletProdutoFC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <url-pattern>/ServletProdutoFC</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+    <servlet>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <servlet-class>cadastroee.servlets.ServletProdutoFC</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletProduto</servlet-name>
+        <url-pattern>/ServletProduto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <url-pattern>/ServletProdutoFC</url-pattern>
+    </servlet-mapping>
+</web-app>
